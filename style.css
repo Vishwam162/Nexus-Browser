@@ -1,0 +1,44 @@
+body {
+    user-select: none;
+    -webkit-user-select: none; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0e14;
+    overflow: hidden; 
+}
+
+input {
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+/* Glass effect for UI cards */
+.glass-panel {
+    background: rgba(15, 17, 26, 0.5) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+webview {
+    display: flex !important;
+    width: 100vw !important;
+    height: calc(100vh - 56px) !important; 
+    background-color: transparent !important; 
+    z-index: 10;
+}
+
+#welcome-screen {
+    background-color: transparent !important;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 20;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 10px; }

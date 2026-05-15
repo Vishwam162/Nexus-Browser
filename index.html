@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Browser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col h-screen text-white relative bg-black">
+
+    <img src="https://wallpaperbat.com/img/8642930-anime-background-video-of-beautiful.jpg" 
+         style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: 0; opacity: 0.8;">
+
+    <header class="h-[56px] bg-[#0b0e14]/90 backdrop-blur-md border-b border-indigo-500/20 px-4 flex items-center justify-between z-50 shrink-0">
+        <div class="flex items-center gap-2">
+            <button id="back" class="p-2 text-indigo-400 hover:text-white transition-all">←</button>
+            <button id="forward" class="p-2 text-indigo-400 hover:text-white transition-all">→</button>
+            <button id="refresh" class="p-2 text-indigo-400 hover:text-white transition-all">↻</button>
+        </div>
+
+        <div class="flex-1 max-w-3xl px-6">
+            <input type="text" id="url-input" value="nexus://welcome" 
+                   class="w-full bg-[#151822]/80 border border-indigo-500/30 rounded-lg px-10 py-1.5 text-sm text-indigo-200 focus:outline-none focus:border-indigo-400">
+        </div>
+
+        <div class="flex items-center gap-4">
+            <span class="text-[10px] font-black text-indigo-500 tracking-[0.2em] uppercase">Nexus Engine</span>
+            <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center font-bold shadow-lg">N</div>
+        </div>
+    </header>
+
+    <main class="relative flex-1 z-10 bg-transparent">
+        <webview id="browser-viewport" src="about:blank" class="w-full h-full"></webview>
+        
+        <div id="welcome-screen" class="absolute inset-0 flex flex-col items-center justify-center">
+            <div class="z-30 relative w-full max-w-2xl px-6">
+                <div class="glass-panel rounded-[32px] p-12 text-center border border-white/10 shadow-2xl">
+                    <h1 class="text-8xl font-black text-white tracking-tighter mb-8 drop-shadow-2xl">NEXUS</h1>
+                    <input type="text" id="central-search-input" 
+                           class="w-full bg-black/40 border border-indigo-500/50 rounded-2xl px-8 py-5 text-xl text-white placeholder-indigo-200/50 focus:outline-none focus:border-indigo-400"
+                           placeholder="Search the web...">
+                </div>
+            </div>
+            <footer class="absolute bottom-4 text-center z-20 text-[10px] text-white/40 tracking-widest uppercase">
+                Developed by Vishwam Phalke | Pune, India
+            </footer>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
