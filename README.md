@@ -10,7 +10,7 @@ Nexus is a standalone desktop browser built using Electron and the Chromium engi
 * **Theming:** Injects custom CSS into search results for a unified dark-glass aesthetic.
 
 ## 🚀 Getting Started
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/Nexus-Browser.git`
+1. Clone the repo: `git clone https://github.com/Vishwam162/Nexus-Browser.git`
 2. Install dependencies: `npm install`
 3. Launch the app: `npm start`
 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Browser | By Vishwam Phalke</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --brand: #22d3ee;
+            --bg: #03060a;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: #d1d5db;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(15, 18, 26, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+        }
+
+        .nexus-gradient {
+            /* 1. Apply the colors */
+            background: linear-gradient(to right, #22d3ee, #a855f7);
+
+            /* 2. Clip the background to the text shape */
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* 3. Make the actual text transparent so the background shows through */
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center font-bold text-black shadow-lg shadow-cyan-500/20">
+                N</div>
+            <span class="text-xl font-black text-white tracking-tighter uppercase">Nexus Engine</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-gray-400">
+            <a href="#about" class="hover:text-cyan-400 transition">Founder</a>
+            <a href="#download" class="hover:text-cyan-400 transition">Download</a>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-32 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-cyan-500/10 blur-[120px] rounded-full">
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-7xl md:text-9xl font-black text-white mb-6 tracking-tighter leading-none">
+                THE <span class="nexus-gradient">FUTURE</span> IS HERE.
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                Experience a browser designed for performance, custom-built by <strong>Overpowered Studios</strong>.
+            </p>
+            <a href="#download"
+                class="px-12 py-5 bg-cyan-500 text-black font-black text-lg rounded-2xl shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:scale-105 transition-all inline-block">
+                GET NEXUS BROWSER
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2">
+                <div
+                    class="w-full aspect-square bg-gradient-to-br from-cyan-500 to-purple-600 rounded-[3rem] flex items-center justify-center text-9xl shadow-2xl">
+                    👨‍💻
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <span class="text-cyan-400 font-bold tracking-[0.3em] uppercase text-sm mb-4 block">Founder &
+                    Owner</span>
+                <h2 class="text-6xl font-black text-white mb-8 tracking-tighter">Vishwam Phalke</h2>
+                <p class="text-xl text-gray-400 leading-relaxed mb-6">
+                    A 15-year-old visionary from Pune, India, Vishwam is the driving force behind <strong>Overpowered
+                        Studios</strong>.
+                </p>
+                <p class="text-lg text-gray-500 leading-relaxed">
+                    With a mastery of Python, HTML/CSS, and Javascript, he has developed independent software
+                    architectures like the <strong>Nexus Programming Language</strong> and the <strong>Nexus
+                        Browser</strong>. His mission is to eliminate software dependencies and build a truly standalone
+                    ecosystem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-32 px-6 bg-white/[0.02]">
+        <div class="max-w-4xl mx-auto glass rounded-[3rem] p-16 text-center border-cyan-500/20">
+            <h2 class="text-5xl font-black text-white mb-6 uppercase tracking-tighter">Release 1.0.0</h2>
+            <p class="text-gray-400 mb-10 italic">"Native Windows execution. Cybernetic UI. Zero dependencies."</p>
+
+            <div class="flex flex-col gap-4">
+                <a href="https://github.com/Vishwam162/Nexus-Browser/releases/download/v1.0.0/nexus-browser-1.0.0-setup.exe"
+                    class="w-full py-5 bg-white text-black font-black rounded-2xl hover:bg-cyan-500 transition-colors">
+                    DOWNLOAD INSTALLER (.EXE)
+                </a>
+                <p class="text-[10px] text-gray-600 font-bold tracking-widest uppercase mt-4">
+                    Stable Windows x64 Build &bull; Verified by Overpowered Studios
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-white/5">
+        <p class="text-[10px] text-gray-600 font-bold tracking-[0.4em] uppercase">
+            &copy; 2026 Overpowered Studios &bull; Pune, India
+        </p>
+    </footer>
+
+</body>
+
+</html>
