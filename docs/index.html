@@ -12,7 +12,7 @@
         body { background-color: var(--bg); color: #d1d5db; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
         .glass { background: rgba(15, 18, 26, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
         
-        /* Fixed text clipping for cross-browser standard support */
+        /* Multi-browser standard support for text-clipping gradients */
         .text-gradient { 
             background: linear-gradient(to right, var(--accent), #a855f7); 
             -webkit-background-clip: text; 
@@ -28,7 +28,7 @@
             color: transparent; 
         }
         
-        /* Floating Animation for UI Preview */
+        /* Floating UI Panel Animation */
         @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
         .float-anim { animation: float 5s ease-in-out infinite; }
     </style>
@@ -43,7 +43,8 @@
         <div class="hidden md:flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <a href="#about" class="hover:text-cyan-400 transition">The Founder</a>
             <a href="#releases" class="hover:text-cyan-400 transition">History</a>
-            <a href="https://github.com/Vishwam162/Nexus-Browser" class="px-5 py-2 border border-white/10 rounded-full hover:bg-white hover:text-black transition">Source Code</a>
+            <a href="#download" class="hover:text-cyan-400 transition">Download</a>
+            <a href="https://github.com/Vishwam162/Nexus-Browser" target="_blank" class="px-5 py-2 border border-white/10 rounded-full hover:bg-white hover:text-black transition">Source Code</a>
         </div>
     </nav>
 
@@ -60,13 +61,13 @@
                     A standalone browsing engine optimized for speed and cybernetic aesthetics. Powered by Chromium, designed by <span class="text-white font-bold">Overpowered Studios.</span>
                 </p>
                 
-                <div id="download" class="flex flex-col sm:flex-row gap-6">
-                    <a href="https://github.com/Vishwam162/Nexus-Browser/releases/download/v1.0.0/nexus-browser-1.0.0-setup.exe" 
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="https://github.com/Vishwam162/Nexus-Browser/releases/download/v1.0.0/nexus-browser-1.0.0.Setup.exe" 
                        class="px-10 py-5 bg-cyan-500 text-black font-black text-lg rounded-2xl shadow-[0_0_40px_rgba(34,211,238,0.3)] hover:scale-105 transition-all text-center">
                         DOWNLOAD FOR WINDOWS
                     </a>
                 </div>
-                <p class="mt-6 text-[10px] text-gray-600 font-bold uppercase tracking-widest">v1.0.0 Stable &bull; x64 Architecture &bull; 82MB</p>
+                <p class="mt-6 text-[10px] text-gray-600 font-bold uppercase tracking-widest">v1.0.0 Stable &bull; x64 Architecture &bull; 102MB</p>
             </div>
 
             <div class="relative float-anim hidden lg:block">
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute -inset-6 border border-cyan-500/10 rounded-[4rem] -z-10 blur-xl"></div>
+                <div class="absolute -inset-6 border border-cyan-500/10 rounded-[4rem] -z-10 blur-xl">xl</div>
             </div>
         </div>
     </section>
@@ -138,6 +139,18 @@
                     <div class="p-4 glass rounded-2xl text-[10px] font-bold text-orange-400 uppercase tracking-widest text-center">UI/UX Strategy</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto glass rounded-[3rem] p-16 text-center border-cyan-500/20">
+            <h2 class="text-5xl font-black text-white mb-6 uppercase tracking-tighter">Deploy Nexus</h2>
+            <p class="text-gray-400 mb-10 italic">"Join the digital sovereignty movement."</p>
+            <a href="https://github.com/Vishwam162/Nexus-Browser/releases/download/v1.0.0/nexus-browser-1.0.0.Setup.exe" 
+               class="w-full py-5 bg-white text-black font-black rounded-2xl hover:bg-cyan-500 transition-colors inline-block">
+               DOWNLOAD INSTALLER (.EXE)
+            </a>
+            <p class="text-[10px] text-gray-600 font-bold tracking-[0.4em] uppercase mt-8">Windows x64 Build &bull; Verified Build</p>
         </div>
     </section>
 
